@@ -1,0 +1,25 @@
+graph Falmily {
+    // list of names
+    meven [label="Meven"];
+      alix [label="Ktaboudin"];
+        iris [label="iris"];
+        camille [label="GTA"];
+      chris [label="RubyCFlirt"];
+        lilo [label="lilo"];
+        anouchka [label="anouchka"];
+        benoit [label="Féeromone"];
+    
+    
+    /*
+    ** List of patronage links
+    */
+
+    // Meven's graph
+    meven -- alix;
+      alix -- iris;
+      alix -- gta;
+    meven -- chris;
+      chris -- benoit;
+      chris -- anouchka;
+      chris -- lilo;
+}
