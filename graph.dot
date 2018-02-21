@@ -3,7 +3,8 @@ graph Falmily {
     meven [label="Meven", fillcolor="blue:black"]; // IPP
       alix [label="Ktaboudin", color="pink", shape=ellipse] // Paramed
         iris [label="BurningCopper", color="red"]; // Droit
-          // TODO: Iris' family
+          lisa [label="BTP", fillcolor="white"]; // BTS
+          lautre [label="", color="red", shape=ellipse]; // TODO
         camille [label="GTA", fillcolor="blue:black"]; // IPP
           julien [label="Moloss", fillcolor="blue:black"]; // IPP
           chabal [label="PPR", fillcolor="blue:black"]; // IPP
@@ -32,17 +33,19 @@ graph Falmily {
     ** List of patronage links
     */
 
-    // Meven's graph
+    // Alix's branch
     meven -- alix;
       alix -- iris;
-        // TODO: Iris' family
+        iris -- lisa;
+        iris -- lautre;
       alix -- camille;
         camille -- julien;
         camille -- chabal;
-
+      // Adoption IPP
       alix -- maxime [style=dashed, color="black:blue"];
       alix -- lily [style=dashed, color="black:blue"];
 
+    // Chris' branch
     meven -- chris;
         chris -- lucas;
           lucas -- coralie;
@@ -53,10 +56,10 @@ graph Falmily {
         chris -- tiffany;
           tiffany -- pandi;
           tiffany -- bagnagna;
-
+      // Adoption Paris
       chris -- lilo [style=dashed, color="red:blue"];
       chris -- benoit [style=dashed, color="red:blue"];
-
+      // Adoption rose
       chris -- anouchka [style=dashed, color="pink"];
       chris -- laetitia [style=dashed, color="pink"];
 }
