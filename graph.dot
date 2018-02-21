@@ -4,7 +4,7 @@ graph Falmily {
       alix [label="Ktaboudin", color="pink", shape=ellipse] // Paramed
         iris [label="BurningCopper", color="red"]; // Droit
           lisa [label="BTP", fillcolor="white"]; // BTS
-          lautre [label="", color="red", shape=ellipse]; // TODO
+          vianney [label="GOLLUM tu voaa", color="purple", shape=ellipse]; // Dentaire
         camille [label="GTA", fillcolor="blue:black"]; // IPP
           julien [label="Moloss", fillcolor="blue:black"]; // IPP
           chabal [label="PPR", fillcolor="blue:black"]; // IPP
@@ -37,7 +37,7 @@ graph Falmily {
     meven -- alix;
       alix -- iris;
         iris -- lisa;
-        iris -- lautre;
+        iris -- vianney;
       alix -- camille;
         camille -- julien;
         camille -- chabal;
