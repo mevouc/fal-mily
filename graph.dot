@@ -1,17 +1,30 @@
 graph Falmily {
     // list of names
-    meven [label="Meven", color="black", fillcolor="blue"];
-      alix [label="Ktaboudin", color="pink"];
-        iris [label="BurningCopper", color="red"];
-        camille [label="GTA", color="black", fillcolor="blue"];
-          julien [label="Moloss", color="black", fillcolor="blue"];
-          chabal [label="PPR", color="black", fillcolor="blue"];
-      chris [label="RubyCFlirt", color="orange"];
-        lilo [label="lilo", color="pink"];
-        anouchka [label="anouchka"];
-        benoit [label="Féeromone", color="red", fillcolor="green"];
-          barbare [label="Barbare", color="red"];
-          marvin [label="Pikatastrofée", color="pink"];
+    meven [label="Meven", fillcolor="blue:black"]; // IPP
+      alix [label="Ktaboudin", color="pink"]; // Paramed
+        iris [label="BurningCopper", color="red"]; // Droit
+        camille [label="GTA", fillcolor="blue:black"]; // IPP
+          julien [label="Moloss", fillcolor="blue:black"]; // IPP
+          chabal [label="PPR", fillcolor="blue:black"]; // IPP
+        // Adoption IPP
+        maxime [label="JarJarBinks", fillcolor="blue:black"]; // IPP
+        lily [label="Caaaliiine", fillcolor="blue:black"]; // IPP
+      chris [label="RubyCFlirt", color="orange"]; // Gestion
+        lucas [label="PréDsuceur", color="orange"]; // DCG
+          coralie [label="Coconnerie", color="yellow"]; // Psycho
+          guillaume [label="Dindon", fillcolor="blue:black"]; // Ingé
+        louise [label="Routier", fillcolor="blue:black"]; // Ingé
+          katia [label="Yoshi", color="green"]; // Pharma
+          antoine [label="PGD", color="green"]; // Pharma
+        tiffany [label="Penbagna", color="red"]; // Médecine
+          pandi [label="Pandi", color="red"]; // Médecine
+          bagnagna [label="Bagnana", color="red"]; // Droit
+        // Adoption Paris
+        lilo [label="Saint Seiya", color="pink"]; // Paramed
+        benoit [label="Féeromone", color="red", fillcolor="green:red"]; // IF
+        // Adoption rose
+        anouchka [label="AmFéetaMiiiine", color="pink"]; // Paramed
+        laetitia [label="UtoPiaf", color="pink"]; // Paramed
     
     
     /*
@@ -21,13 +34,28 @@ graph Falmily {
     // Meven's graph
     meven -- alix;
       alix -- iris;
+        // TODO
       alix -- camille;
         camille -- julien;
         camille -- chabal;
+
+      alix -- maxime [style=dashed, color="blue:black"];
+      alix -- lily [style=dashed, color="blue:black"];
+
     meven -- chris;
-      chris -- anouchka;
-      chris -- lilo;
-      chris -- benoit;
-        benoit -- barbare;
-        benoit -- marvin;
+        chris -- lucas;
+          lucas -- coralie;
+          lucas -- guillaume;
+        chris -- louise;
+          louise -- katia;
+          louise -- antoine;
+        chris -- tiffany;
+          tiffany -- pandi;
+          tiffany -- bagnagna;
+
+      chris -- lilo [style=dashed];
+      chris -- benoit [style=dashed];
+
+      chris -- anouchka [style=dashed, color="pink"];
+      chris -- laetitia [style=dashed, color="pink"];
 }
