@@ -27,8 +27,7 @@ graph Falmily {
         // Adoption rose
         anouchka [label="AmFéetaMiiiine", color="pink", shape=ellipse] // Paramed
         laetitia [label="UtoPiaf", color="pink", shape=ellipse] // Paramed
-    
-    
+
     /*
     ** List of patronage links
     */
