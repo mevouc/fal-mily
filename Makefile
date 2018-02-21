@@ -1,5 +1,5 @@
 CC = dot
-ATTRS = -Goverlap=false -Gsplines=true -Grankdir=BT -Nstyle=radial
+ATTRS = -Goverlap=false -Gsplines=true -Grankdir=BT -Nstyle=radial -Nshape=plaintext
 
 IN = graph.dot
 IMG = family.png

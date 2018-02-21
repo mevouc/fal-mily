@@ -1,8 +1,9 @@
 graph Falmily {
     // list of names
     meven [label="Meven", fillcolor="blue:black"]; // IPP
-      alix [label="Ktaboudin", color="pink"]; // Paramed
+      alix [label="Ktaboudin", color="pink", shape=ellipse] // Paramed
         iris [label="BurningCopper", color="red"]; // Droit
+          // TODO: Iris' family
         camille [label="GTA", fillcolor="blue:black"]; // IPP
           julien [label="Moloss", fillcolor="blue:black"]; // IPP
           chabal [label="PPR", fillcolor="blue:black"]; // IPP
@@ -14,17 +15,17 @@ graph Falmily {
           coralie [label="Coconnerie", color="yellow"]; // Psycho
           guillaume [label="Dindon", fillcolor="blue:black"]; // Ingé
         louise [label="Routier", fillcolor="blue:black"]; // Ingé
-          katia [label="Yoshi", color="green"]; // Pharma
-          antoine [label="PGD", color="green"]; // Pharma
-        tiffany [label="Penbagna", color="red"]; // Médecine
-          pandi [label="Pandi", color="red"]; // Médecine
+          katia [label="Yoshi", color="green", shape=ellipse] // Pharma
+          antoine [label="PGD", color="green", shape=ellipse] // Pharma
+        tiffany [label="Penbagna", color="red", shape=ellipse] // Médecine
+          pandi [label="Pandi", color="red", shape=ellipse] // Médecine
           bagnagna [label="Bagnana", color="red"]; // Droit
         // Adoption Paris
-        lilo [label="Saint Seiya", color="pink"]; // Paramed
+        lilo [label="Saint Seiya", color="pink", shape=ellipse] // Paramed
         benoit [label="Féeromone", color="red", fillcolor="green:red"]; // IF
         // Adoption rose
-        anouchka [label="AmFéetaMiiiine", color="pink"]; // Paramed
-        laetitia [label="UtoPiaf", color="pink"]; // Paramed
+        anouchka [label="AmFéetaMiiiine", color="pink", shape=ellipse] // Paramed
+        laetitia [label="UtoPiaf", color="pink", shape=ellipse] // Paramed
     
     
     /*
@@ -34,13 +35,13 @@ graph Falmily {
     // Meven's graph
     meven -- alix;
       alix -- iris;
-        // TODO
+        // TODO: Iris' family
       alix -- camille;
         camille -- julien;
         camille -- chabal;
 
-      alix -- maxime [style=dashed, color="blue:black"];
-      alix -- lily [style=dashed, color="blue:black"];
+      alix -- maxime [style=dashed, color="black:blue"];
+      alix -- lily [style=dashed, color="black:blue"];
 
     meven -- chris;
         chris -- lucas;
@@ -53,8 +54,8 @@ graph Falmily {
           tiffany -- pandi;
           tiffany -- bagnagna;
 
-      chris -- lilo [style=dashed];
-      chris -- benoit [style=dashed];
+      chris -- lilo [style=dashed, color="red:blue"];
+      chris -- benoit [style=dashed, color="red:blue"];
 
       chris -- anouchka [style=dashed, color="pink"];
       chris -- laetitia [style=dashed, color="pink"];
